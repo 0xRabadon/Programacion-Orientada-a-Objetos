@@ -14,11 +14,28 @@ public class IndiceMasaCorporal {
 		peso = sc.nextDouble();
 		System.out.print("¿Cuanto mides?");
 		altura = sc.nextDouble();
+		sc.close();
 		
 		IMC = peso/(altura*altura);
+		System.out.print("Tu IMC es:" + IMC + " ");
 		
-		System.out.print(IMC);
-		sc.close();
+		if (IMC < 16.0) {
+			System.out.print("Estas severamente delgado");
+		} else if (IMC < 16.9) {
+			System.out.print("Estas moderadamente delgado");
+		} else if (IMC < 18.4) {
+			System.out.print("Estas delgado");
+		} else if (IMC < 24.9) {
+			System.out.print("Estas normal :D");
+		} else if (IMC < 29.9) {
+			System.out.print("Estas con sobrepeso");
+		} else if (IMC < 34.9) {
+			System.out.print("Estas con obesidad Tipo I");
+		} else if (IMC < 39.9) {
+			System.out.print("Estas con obesidad Tipo II");
+		} else {
+			System.out.print("Estas con obesidad Tipo III");
+		}
 	}
 
 }
