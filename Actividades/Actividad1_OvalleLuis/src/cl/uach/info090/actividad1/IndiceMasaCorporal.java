@@ -10,9 +10,9 @@ public class IndiceMasaCorporal {
 		double IMC;
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.print("¿Cual es tu peso?");
+		System.out.print("¿Cual es tu peso?:");
 		peso = sc.nextDouble();
-		System.out.print("¿Cuanto mides?");
+		System.out.print("¿Cuanto mides?:");
 		altura = sc.nextDouble();
 		sc.close();
 		
