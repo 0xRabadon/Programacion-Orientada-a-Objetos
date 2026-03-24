@@ -9,6 +9,7 @@ public class AutoTest {
 		miAuto.patente = "ABC123";
 		miAuto.color = "azul";
 		miAuto.marca = "kia";
+		System.out.println(miAuto.marca);
 		
 		Auto otroAuto = new Auto(); // declaramos otro auto un toyota blanco y negro
 		
@@ -17,9 +18,8 @@ public class AutoTest {
 		otroAuto.marca = "Toyota";
 		otroAuto.color = "panda";
 		
-		miAuto.selMarca("nissan");
-		String marca1;
-		
+		miAuto.selMarca("nissan");  // con el metodo creadoselMarca() podemos cambiar la marca de "miAuto"
+		System.out.println(miAuto.marca);
 	}
-
+	
 }
