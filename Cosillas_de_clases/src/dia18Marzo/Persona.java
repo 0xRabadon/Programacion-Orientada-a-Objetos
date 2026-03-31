@@ -3,9 +3,9 @@ package dia18Marzo;
 import java.util.ArrayList;
 
 public class Persona {
-	private String id;  //El private hace que la variable solo se vea en la clase donde esta definida, osea no es publica
-	private double altura;
-	private ArrayList<Persona> hijos;
+	public String id;  //El private hace que la variable solo se vea en la clase donde esta definida, osea no es publica
+	public double altura;
+	public ArrayList<Persona> hijos;
 	
 	public Persona(String id) {
 		setId(id);

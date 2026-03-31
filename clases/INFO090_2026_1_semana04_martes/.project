@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>tonteras_para_practicar</name>
+	<name>INFO090_2026_1_semana04</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -14,16 +14,4 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>Actividades</name>
-			<type>2</type>
-			<location>/home/rabadon/Escritorio/POO/Actividades</location>
-		</link>
-		<link>
-			<name>Actividades2</name>
-			<type>2</type>
-			<location>/home/rabadon/Escritorio/POO/Actividades</location>
-		</link>
-	</linkedResources>
 </projectDescription>
