@@ -1,0 +1,42 @@
+import java.util.LinkedList; // Importamos la implementación específica
+import java.util.List;
+
+public class LibroContactos {
+    // Usamos List como tipo de referencia y LinkedList como la instancia real
+    private List<Contacto> contactos;
+
+    public LibroContactos() {
+        // Inicializamos como una Lista Enlazada
+        this.contactos = new LinkedList<>();
+    }
+
+    // Retorna una sublista con los contactos que coincidan con el nombre
+    public List<Contacto> buscarContacto(String nombre) {
+        List<Contacto> resultados = new LinkedList<>();
+        for (Contacto c : contactos) {
+            // Suponiendo que la clase Contacto tiene un método getNombre()
+            if (c.getNombre().equalsIgnoreCase(nombre)) {
+                resultados.add(c);
+            }
+        }
+        return resultados;
+    }
+
+    public Contacto agregarContacto(Contacto nuevoContacto) {
+        this.contactos.add(nuevoContacto); // Se añade al final de la cadena
+        return nuevoContacto;
+    }
+
+    public void eliminarContacto(Contacto contacto) {
+        this.contactos.remove(contacto); // Rompe los enlaces y reconecta los nodos
+    }
+
+    public List<Contacto> listarContactos() {
+        return this.contactos;
+    }
+
+    public void cargarContactos(String archivo) {
+        // Aquí iría la lógica de lectura de archivos (Scanner o BufferedReader)
+        System.out.println("Cargando contactos desde: " + archivo);
+    }
+}
