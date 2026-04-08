@@ -24,7 +24,7 @@ public class Contacto {
             Integer.parseInt(telefono);
             this.telefono = telefono;
         } catch (NumberFormatException excepcion) {
-            System.out.println("El numero telefonico no es un numero valido, solo debe contener digitos");
+            System.	out.println("El numero telefonico no es un numero valido, solo debe contener digitos");
         }
 		
 	}
