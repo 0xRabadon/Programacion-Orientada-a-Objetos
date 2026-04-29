@@ -1,0 +1,14 @@
+package dia28Abril;
+
+public abstract class A {
+	private int x;
+	
+	public A(int x) {
+		this.x = x;
+	}
+	public int getX() {
+		return x;
+	}
+}
+
+
