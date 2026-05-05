@@ -1,6 +1,6 @@
 package cl.uach.info090.OvalleLuisAct4;
 
-public class PlantaEnergetica {
+abstract class PlantaEnergetica {
 	private double mw;
 	
 	public PlantaEnergetica(double mw) {
