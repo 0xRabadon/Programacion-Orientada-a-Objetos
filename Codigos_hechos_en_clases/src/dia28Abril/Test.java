@@ -9,9 +9,9 @@ public class Test {
 		A a = new B(0);
 		Object o = new Object();
 		
-		if(o instanceof A) {
-			System.out.println(o.getX());
-		}
+		//if(o instance of A) {
+			//System.out.println(o.getX());
+		//}
 	}
 
 }
