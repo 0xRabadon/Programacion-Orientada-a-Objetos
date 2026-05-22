@@ -1,6 +1,7 @@
 package cl.uach.info090.OvalleLuisAct4;
 
 public class PlantaEolica extends PlantaEnergetica implements EnergiaLimpia {
+	
 	private boolean zeroEmision;
 	
 	public PlantaEolica(double mw,boolean zeroEmision) {
