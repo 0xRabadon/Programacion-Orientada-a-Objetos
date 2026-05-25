@@ -9,22 +9,19 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 
 
-public class RutApp {
-	private Rut rut;
+public class RutApp extends JFrame implements ActionListener {
+	
 	public RutApp() {
-}
+		setTitle("Verificador de Rut");
+		setSize(500, 300);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		initComponents();
+		setVisible(true);
+	}
 	
 	
 public void initComponents() {
-		
-	}
-public static void main(String[] args) {
-	// Parametros ventana ven = ventana
-		JFrame ven = new JFrame();
-		ven.setBounds(100, 100, 500, 300);
-		ven.setTitle("Verificador de Rut");
-		ven.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		ven.setLayout(null);
+		this.setLayout(null);
 		
 	// Texto
 		JLabel titulo = new JLabel();
@@ -39,9 +36,9 @@ public static void main(String[] args) {
 		JLabel rutlisto = new JLabel(); // estara oculto ya que no hay rut xd
 		rutlisto.setBounds(60,76,100,25);
 		
-		ven.add(titulo);
-		ven.add(instruccion);
-		ven.add(rutlisto);
+		this.add(titulo);
+		this.add(instruccion);
+		this.add(rutlisto);
 		
 	// boton y caja de texto
 		JButton verificar = new JButton("Verificar DV");
@@ -50,29 +47,24 @@ public static void main(String[] args) {
 		JTextField caja = new JTextField();
 		caja.setBounds(30,38,200,30);
 		
-		ven.add(verificar);
-		ven.add(caja);
+		this.add(verificar);
+		this.add(caja);
 		
 	// Accion
 		ActionListener Dv = new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent ae) {
-				rutlisto.setText("olo");
+				String rutCaja = caja.getText();
+				Rut Rut = new Rut(rutCaja);
+				rutlisto.setText(Rut.toString());
 			}
 		};
 		
-		boton1.addActionListener(Dv);
+		verificar.addActionListener(Dv);
 		
-		ven.setVisible(true);
-		
-		
-		
-		
-		//JPanel opciones = new JPanel();
-		//opciones.add(new JButton("Verificar DV"));
-		//opciones.add(new JTextField("12345678"));
-		//opciones.add(rutSD);
 		
 	}
-
+public static void main(String[] args) {
+		new RutApp();
+	}
 }
